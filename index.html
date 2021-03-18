@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All About Kyle</title>
+<script>
+function isPrime() {
+	// alert("Hello World!")
+
+    // Prime number can only be divisible by one and itself
+    // p = {2, 3, 5, 7, 11...... 101...}
+    //!p = {4, 6, 9, 15, .... 225...}
+
+    // x = 49
+    // let i be a possible divisor, starting from 2
+    // you check 2, 2 + 1, 2 + 2...., x - 1
+
+    // 12 % 7 = 5
+    // 11 % 2 = 1
+
+
+    var x = 13;
+    var prime = true;
+
+    for(var i = 2; i <= Math.sqrt(x); i++) {
+    	if (x % i == 0) {
+            prime = false;
+    		break;
+    	}
+
+    	else {
+    		continue;
+    	}
+    }
+    // 4 + 5 = 0
+    // 4 + "hello" = "4 hello";
+
+    alert(x + " is prime: " + prime);
+
+}
+</script>
+</head>
+<body>
+<h1>Hello World! This is Kyle's first website!</h1>
+<h2>My Hobbies</h2>
+<ul>
+<li>Gaming</li>
+    <li>Drawing</li>
+    <li>Reading</li>
+</ol>
+<li>Biking</li>
+<li>Music</li>
+<li>Movies</li>
+</ul>
+<hr>
+<b>My Favorite Website:</b> <a href="https://www.apple.com">Apple Homepage</a>
+<br>
+<i>My Favorite Pokemon:</i>
+<br>
+<img src="https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/375px-006Charizard.png" />
+<br>
+<u>My Social Media</u>
+<br>
+<a href="https://www.instagram.com/kylejdo/" target="_blank"><img src="images/instagram.png" /></a>&nbsp;&nbsp;
+<img src="images/snapchat.png" />&nbsp;&nbsp;
+<img src="images/facebook.png" />&nbsp;&nbsp;
+<img src="images/twitter.png" />&nbsp;&nbsp;
+<br>
+<br>
+<table border="1">
+<tr>
+   <td>Me</td>
+   <td>Mom</td>
+   <td>Dad</td>
+   <td>Sister</td>
+</tr>
+<tr>
+   <td>
+   	<img src="images/kyle.jpg" height="150" />
+   </td>
+   <td>
+   <img src="images/mom.jpg" height="150"/>
+   </td>
+   <td>
+  <img src="images/dad.jpg" height="150"/>
+   </td>
+   <td>
+   <img src="images/emily.jpg" height="150"/>
+   </td>
+</tr>
+<tr>
+    <td rowspan="2">My Crush</td>
+    <td colspan="3">Mochi</td>
+</tr>
+<tr>
+    <td colspan="3"><img src="images/mochi.jpg" height="150"/></td>
+</tr>
+</table>
+<br>
+<button onclick="isPrime()">Check Prime</button>
+</body>
+</html>
